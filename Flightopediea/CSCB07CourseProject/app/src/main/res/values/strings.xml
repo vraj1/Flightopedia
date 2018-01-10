@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Flightopedia</string>
+    <string name="loginEmailHint">Email</string>
+    <string name="loginPasswordHint">Password</string>
+    <string name="loginButton">Log in</string>
+    <string name="incorrectPassword">Incorrect Email or Password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="client_tab_items">
+        <item>Account</item>
+        <item>Bookings</item>
+        <item>Flights</item>
+    </string-array>
+    <string-array name="admin_tab_items">
+        <item>Clients</item>
+        <item>Settings</item>
+        <item>Flights</item>
+        <item>Flight Edit</item>
+    </string-array>
+    <string name="client_file_hint">Client File Name</string>
+    <string name="adminuser">admin</string>
+    <string name="adminpass">password</string>
+    <string name="uploadClient">Upload Client Info</string>
+    <string name="flight_file_hint">Flight File Name</string>
+    <string name="uploadFlight">Upload Flight Info</string>
+    <string name="updateinfo">Update Information</string>
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="date">Departure Date: yyyy-MM-dd</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="60dp"
+        >
+        <RelativeLayout
+            android:id="@+id/relative_layout_flight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/origin"
+                android:imeOptions="actionDone"
+                android:hint="@string/origin"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/destination"
+                android:imeOptions="actionDone"
+                android:layout_below="@+id/origin"
+                android:hint="@string/destination"
+                />
+
+            <EditText
+                android:layout_below="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/date"
+                android:imeOptions="actionDone"
+                android:hint="@string/date"
+                />
+
+            <CheckBox
+                android:text="Direct Flight"
+                android:fontFamily="serif-monospace"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="20sp"
+                android:textColor="@color/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxFlight"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="6dp"/>
+
+            <CheckBox
+                android:text="Multiple Flight"
+                android:fontFamily="serif-monospace"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="20sp"
+                android:textColor="@color/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxIti"
+                android:layout_below="@id/checkBoxFlight"
+                android:layout_marginTop="6dp" />
+
+            <CheckBox
+                android:text="Cost Decreasing"
+                android:fontFamily="serif-monospace"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="20sp"
+                android:textColor="@color/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/costdecreasing"
+                android:layout_below="@id/checkBoxIti"
+                android:layout_marginTop="6dp" />
+
+            <CheckBox
+                android:text="Time Decreasing"
+                android:fontFamily="serif-monospace"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="20sp"
+                android:textColor="@color/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timedecreasing"
+                android:layout_below="@id/costdecreasing"
+                android:layout_marginTop="6dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:text="Get Flights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/buttonColor"
+        android:id="@+id/get_flight"/>
+</RelativeLayout>

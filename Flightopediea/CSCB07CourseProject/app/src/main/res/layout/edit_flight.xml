@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_flight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="53dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/flightnumber"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_below="@id/flightnumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/Airline"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_below="@id/Airline"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/origin"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_below="@id/origin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/destination"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_below="@id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/depart_date"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_below="@id/depart_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/arrival_date"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_below="@id/arrival_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/price"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_below="@id/price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textNoSuggestions"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/hintLoginColor"
+                android:id="@+id/seats"
+                android:imeOptions="actionDone"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:text="@string/updateinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/buttonColor"
+        android:id="@+id/client_button"/>
+
+</RelativeLayout>

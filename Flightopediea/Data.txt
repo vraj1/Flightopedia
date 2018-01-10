@@ -1,0 +1,6 @@
+- the data will be stored using SQLlite for Android
+- there will be 2 different databases, one for the client and one for flight 
+- the FLIGHT_TABLE will hold the values for FlightNumber, Origin, Destination, Airline, Depart date, Arrival date, Price details, DepartTime, ArriveTime
+- the CLIENT_TABLE will hold the values for Email, Password, FirstName, LastName, Address, CreditCard, Expiry, and Itinerary
+- Access to the database will be done with various methods that will open and close the database several times in our implementation
+- Using a database will allow for a more streamline process in our methods for retrieving a client's, flight's or itineraries information

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#da121415</color>
+    <color name="colorPrimaryDark">#d22c2e2e</color>
+    <color name="hintLoginColor">#859cedf0</color>
+    <color name="buttonColor">#c807575c</color>
+    <color name="darkGray">#E4181817</color>
+    <color name="toolbar">#a83a7d8f</color>
+    <color name="checkbox">#a8cd9d23</color>
+
+</resources>
